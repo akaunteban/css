@@ -1,0 +1,91 @@
+ * {
+     font-family: 'Mulish', sans-serif;
+ }
+
+ .list {
+     padding: 16px 24px 0px 16px;
+     flex-wrap: wrap;
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     box-shadow: none;
+     height: fit-content;
+ }
+
+ .list>* {
+     margin: 0 0 16px 0 !important;
+     padding: 0 !important;
+     box-sizing: border-box;
+ }
+
+
+
+ .label {
+     margin-top: 0px !important;
+     color: white !important;
+     font-weight: 300;
+     font-size: 16px;
+ }
+
+
+ .label:after {
+     visibility: visible;
+     display: block;
+     position: relative;
+     height: 0px;
+     color: black;
+     font-size: 16px;
+     top: -20px;
+ }
+
+ .name {
+     width: 100vw;
+     order: 1;
+ }
+
+ .name .label::after {
+     content: 'Nombre';
+ }
+
+ .pan {
+     order: 2;
+     width: 100%;
+ }
+
+ .pan .label::after {
+     content: 'Número';
+ }
+
+ .expiration-date {
+     order: 3;
+     width: 50%;
+ }
+
+ .expiration-date .label::after {
+     content: 'Válida hasta';
+ }
+
+
+ .security-code {
+     order: 4;
+     width: 50%;
+ }
+
+ .security-code .label::after {
+     content: 'CVV';
+ }
+
+ .expiration-date,
+ .name,
+ .pan,
+ .security-code {
+     color: black !important;
+     font-weight: 700;
+     font-size: 16px;
+
+ }
+
+ .wrapper {
+     display: flex;
+     justify-content: space-between;
+ }

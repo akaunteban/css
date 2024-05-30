@@ -7,7 +7,7 @@
      flex-wrap: wrap;
      display: flex;
      flex-direction: row;
-     width: 100%;
+     width: 95%;
      box-shadow: none;
      height: fit-content;
  }
@@ -87,5 +87,4 @@
 
  .wrapper {
      display: flex;
-     justify-content: space-between;
  }
